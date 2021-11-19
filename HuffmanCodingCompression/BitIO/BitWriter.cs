@@ -19,10 +19,7 @@ namespace HuffmanCodingCompression.BitIO
          */
         public void Flush()
         {
-            if (_curBitIndex != 0)
-            {
-                WriteByte(CurByte);
-            }
+            WriteByte(CurByte);
             _binaryWriter.Flush();
         }
         
